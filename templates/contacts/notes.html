@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+<form action="/your-note/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
